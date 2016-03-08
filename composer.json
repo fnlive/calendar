@@ -1,7 +1,7 @@
 {
-    "name": "fnlive/contactform",
+    "name": "fnlive/calendar",
     "type": "library",
-    "description": "Classes for Contact Forms and message admin",
+    "description": "Class for calendar",
     "keywords": ["html", "forms", "education"],
     "homepage": "http://dbwebb.se/",
     "license": "MIT",
