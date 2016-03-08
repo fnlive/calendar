@@ -1,6 +1,6 @@
 <?php
 
-namespace Fnlive\Contactform;
+namespace Fnlive\Calendar;
 
 use \DateTime;
 
