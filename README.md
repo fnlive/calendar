@@ -40,9 +40,8 @@ This software is free software and carries a MIT license.
 Todo
 ----------------------------------
 
-* Add extension for enabling sending av message through mail-service to arbitrary receiver.
-* Add support for storing and retrieval of Contact details from database.
 * Add unit testing for module.
+* Add support for Scrutinizer.
 
 
 History
