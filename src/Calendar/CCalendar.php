@@ -17,6 +17,7 @@ class CCalendar
     private $today;
     private $firstDayInWeekOfMonth;
     private $lastDayInLastWeek;
+    private $firstDayInMonth;
     private $lastDayInMonth;
     private $thisMonth;
     private $prevMonth;
@@ -125,15 +126,12 @@ class CCalendar
     */
     public function datesInMonth()
     {
+        $dates = array();
         $date = $this->firstDayInWeekOfMonth;
         while ($date <= $this->lastDayInLastWeek) {
             $w = ltrim($date->format('W'), 0);
             for ($d=1; $d < 8; $d++) {
-                // $dateText = utf8_encode(strftime("%A %e %B", strtotime($date->format('Y-m-d'))));
-                // %e does not work on windows, use %d instead
-                $dateText = utf8_encode(strftime("%A %#d %B", strtotime($date->format('Y-m-d'))));
                 $dateText = $date->format('d M');
-                // $dateText = $date->format('D d M');
                 $redDay = (7==$d) ? "red-day" : "";
                 $classToday = ($date == $this->today) ? "today" : "";
                 $classThisMonth = ($date < $this->firstDayInMonth || $date > $this->lastDayInMonth) ? "class-outside-month" : "class-inside-month";
