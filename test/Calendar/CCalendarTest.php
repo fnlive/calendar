@@ -20,7 +20,7 @@ class CCalendarTest extends \PHPUnit_Framework_TestCase
     {
         $el = new \Fnlive\Calendar\CCalendar("2016-03-08");
         $res = $el->thisMonth();
-        $exp = "mars 2016";
+        $exp = "March 2016";
         $this->assertEquals($res, $exp, "Created calendar month missmatch.");
     }
     public function testToday()
@@ -37,11 +37,11 @@ class CCalendarTest extends \PHPUnit_Framework_TestCase
     {
         $el = new \Fnlive\Calendar\CCalendar("2016-03-08");
         $res = $el->prevMonth();
-        $exp = "februari";
+        $exp = "February";
         $this->assertEquals($res, $exp, "Prev month missmatch.");
 
         $res = $el->nextMonth();
-        $exp = "april";
+        $exp = "April";
         $this->assertEquals($res, $exp, "Next month missmatch.");
 
         $res = $el->prevMonthDate();

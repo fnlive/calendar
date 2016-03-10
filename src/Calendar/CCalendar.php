@@ -30,7 +30,7 @@ class CCalendar
     */
     public function __construct($displayDate = null)
     {
-        setlocale(LC_TIME, "Swedish");
+        // setlocale(LC_TIME, "Swedish");
         // define("CHARSET", "iso-8859-1");
 
         if (null == $displayDate) {
