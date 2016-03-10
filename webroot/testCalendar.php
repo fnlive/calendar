@@ -46,8 +46,6 @@ $app->router->add('calendar', function () use ($app) {
     $today = new DateTime();
     $date = $app->request->getGet('date', $today->format('Y-m-d'));
     $calendar = new \Fnlive\Calendar\CCalendar($date);
-    // $calendar = new \Mos\Calendar\CCalendar($date);
-    // $controller = new \Fnlive\Contactform\ContactFormAdminController();
 
     $app->views->add('calendar/index', [
         'prevMonth' => $calendar->prevMonth(),
