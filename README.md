@@ -1,6 +1,8 @@
 Calendar a PHP module for contact forms.
 ==================================
 
+[![Build Status](https://travis-ci.org/fnlive/calendar.svg?branch=master)](https://travis-ci.org/fnlive/calendar)
+
 This is a calendar module for the Anax-MVC framework.
 
 * Add a calendar to any page.
